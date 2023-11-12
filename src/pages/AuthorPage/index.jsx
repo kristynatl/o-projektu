@@ -1,16 +1,13 @@
 import { Button } from '../../components/Button';
 import { HomeIcon } from '../../components/HomeIcon';
 import { Link } from 'react-router-dom';
+import imgURL from '../../img/Tynusa-Midjourney.png';
 
 export const AuthorPage = () => {
   return (
     <div className="main">
       <HomeIcon />
-      <img
-        className="image-ai"
-        src="./img/Tynusa-Midjourney.png"
-        alt="Kristýna podle Midjourney"
-      />
+      <img className="image-ai" src={imgURL} alt="Kristýna podle Midjourney" />
       <div className="introduction">
         <h1>Kristýna Tlapáková</h1>
         <p>

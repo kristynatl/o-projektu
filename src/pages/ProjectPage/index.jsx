@@ -1,6 +1,7 @@
 import { Button } from '../../components/Button';
 import { HomeIcon } from '../../components/HomeIcon';
 import { Link } from 'react-router-dom';
+import imgURL from '../../img/teaching-consent.png';
 
 export const ProjectPage = () => {
   return (
@@ -8,7 +9,7 @@ export const ProjectPage = () => {
       <HomeIcon />
       <img
         className="image-ai"
-        src="./img/teaching-consent.png"
+        src={imgURL}
         alt="Rodič vysvětlující dítěti konsent podle Midjourney"
       />
       <div className="introduction">

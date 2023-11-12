@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
+import imgURL from '../../img/ilustrace.svg';
 
 export const Illustration = ({ showDescription }) => {
   const [illustrationSize, setIllustrationSize] = useState('1.4');
@@ -13,7 +14,7 @@ export const Illustration = ({ showDescription }) => {
   return (
     <div className="illustration-container">
       <img
-        src="./img/ilustrace.svg"
+        src={imgURL}
         style={{
           transition: 'transform 2s',
           transform: `scale(${illustrationSize})`,
