@@ -49,3 +49,43 @@ body {
     opacity: 1;
   }
 }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin: 2.5rem 0;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.button {
+  padding: 0.7rem 3rem;
+  border: 0;
+  border-radius: 100px;
+  background: #FFF;
+  box-shadow: 5px 5px 0px 0px #000;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: large;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #D99377;
+  color: #FFF;
+}
+
+.button:active {
+  background-color: #abafb4;
+  color: #FFF
+}

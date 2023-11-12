@@ -1,5 +1,6 @@
-import { Buttons } from '../../components/Buttons';
+import { Button } from '../../components/Button';
 import { HomeIcon } from '../../components/HomeIcon';
+import { Link } from 'react-router-dom';
 
 export const ProjectPage = () => {
   return (
@@ -24,12 +25,16 @@ export const ProjectPage = () => {
           situacích s dítětem mohly probíhat.
         </p>
         <p>
-          Obrázek z produkce umělé inteligence Midjourney vygeneroval "children
-          book illustration of a nervous parent talking to a child about
-          consent".
+          Obrázek byl vytvořen pomocí umělé inteligence Midjourney pod promptem
+          "children book illustration of a nervous parent talking to a child
+          about consent".
         </p>
       </div>
-      <Buttons value1="Chci vědět víc" value2="Čí to byl nápad" />
+      <div className="buttons">
+        <Link to="/author">
+          <Button className="button" value="O autorce" />
+        </Link>
+      </div>
     </div>
   );
 };

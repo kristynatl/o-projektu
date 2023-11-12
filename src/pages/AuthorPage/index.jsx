@@ -1,5 +1,6 @@
-import { Buttons } from '../../components/Buttons';
+import { Button } from '../../components/Button';
 import { HomeIcon } from '../../components/HomeIcon';
+import { Link } from 'react-router-dom';
 
 export const AuthorPage = () => {
   return (
@@ -19,12 +20,16 @@ export const AuthorPage = () => {
           dříve, než zazvoní zvonec, tak jí dřív zazvoní hrana.
         </p>
         <p>
-          Na obrázku je Kristýna v pojetí Midjourney, aneb "children book
-          illustration of a woman trying to learn how to code, happy and
-          desperate at the same time".
+          Na obrázku je Kristýna v pojetí umělé inteligence Midjourney, aneb
+          "children book illustration of a woman trying to learn how to code,
+          happy and desperate at the same time".
         </p>
       </div>
-      <Buttons value1="Chci vědět víc" value2="Čí to byl nápad" />
+      <div className="buttons">
+        <Link to="/project">
+          <Button className="button" value="O projektu" />
+        </Link>
+      </div>
     </div>
   );
 };
