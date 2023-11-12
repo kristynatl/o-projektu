@@ -11,11 +11,11 @@ export const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowDescription(true);
-    }, 2500);
+    }, 1500);
 
     setTimeout(() => {
       setShowButtons(true);
-    }, 7000);
+    }, 5500);
   }, []);
 
   return (

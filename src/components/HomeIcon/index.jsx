@@ -5,11 +5,7 @@ import './style.css';
 export const HomeIcon = () => {
   return (
     <Link to="/">
-      <img
-        src="../../components/HomeIcon/img/HomeIcon.svg"
-        alt="Domů"
-        className="home-icon"
-      />
+      <img src="./img/HomeIcon.svg" alt="Domů" className="home-icon" />
     </Link>
   );
 };
