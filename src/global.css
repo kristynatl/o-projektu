@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
 
+/* General styles */
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-family: 'Open Sans', sans-serif;
-}
-
-.container {
-  max-width: 26rem;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 body {
@@ -22,10 +18,50 @@ body {
   width: 100vW;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styles for initial HomePage description */
+
+.description {
+  width: 50vw;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: larger;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  animation: fadeIn 2s;
+}
+
+/* Common styles for AuthorPage and ProjectPage */
+
+.home-icon {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  width: 150px;
+  height: auto;
+  animation: fadeIn 2s;
+}
+
 .image-ai {
   border-radius: 50%;
   height: 300px;
-  /* margin-top: 2.5rem; */
   animation: fadeIn 2s;
 }
 
@@ -40,15 +76,7 @@ body {
   animation: fadeIn 2s;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
+/* Button styles */
 
 .buttons {
   display: flex;
@@ -56,16 +84,6 @@ body {
   gap: 4rem;
   margin: 2.5rem 0;
   animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .button {

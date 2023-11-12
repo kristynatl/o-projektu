@@ -1,12 +1,13 @@
-import { Button } from '../../components/Button';
-import { HomeIcon } from '../../components/HomeIcon';
 import { Link } from 'react-router-dom';
-import imgURL from '../../img/teaching-consent.png';
+import imgURL from '../../img/explaining-consent.png';
+import iconURL from '../../img/home-icon.svg';
 
 export const ProjectPage = () => {
   return (
     <div className="main">
-      <HomeIcon />
+      <Link to="/">
+        <img src={iconURL} alt="Domů" className="home-icon" />
+      </Link>
       <img
         className="image-ai"
         src={imgURL}
@@ -33,7 +34,7 @@ export const ProjectPage = () => {
       </div>
       <div className="buttons">
         <Link to="/author">
-          <Button className="button" value="O autorce" />
+          <button className="button">O autorce</button>
         </Link>
       </div>
     </div>

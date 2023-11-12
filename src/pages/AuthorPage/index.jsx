@@ -1,12 +1,13 @@
-import { Button } from '../../components/Button';
-import { HomeIcon } from '../../components/HomeIcon';
 import { Link } from 'react-router-dom';
-import imgURL from '../../img/Tynusa-Midjourney.png';
+import imgURL from '../../img/kristyna.png';
+import iconURL from '../../img/home-icon.svg';
 
 export const AuthorPage = () => {
   return (
     <div className="main">
-      <HomeIcon />
+      <Link to="/">
+        <img src={iconURL} alt="Domů" className="home-icon" />
+      </Link>
       <img className="image-ai" src={imgURL} alt="Kristýna podle Midjourney" />
       <div className="introduction">
         <h1>Kristýna Tlapáková</h1>
@@ -24,7 +25,7 @@ export const AuthorPage = () => {
       </div>
       <div className="buttons">
         <Link to="/project">
-          <Button className="button" value="O projektu" />
+          <button className="button">O projektu</button>
         </Link>
       </div>
     </div>

@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './style.css';
-import imgURL from '../../img/ilustrace.svg';
+import imgURL from '../../img/illustration.svg';
 
 export const Illustration = ({ showDescription }) => {
+  /* Initial state for the illustration size when the page is loaded */
   const [illustrationSize, setIllustrationSize] = useState('1.4');
 
+  /* On the change of the description state to true, illustration will shrink */
   useEffect(() => {
     if (showDescription) {
       setIllustrationSize('0.8');
