@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export const Buttons = ({ value1, value2 }) => {
   return (
     <div className="buttons">
-      <a href="">
+      <Link to="/project">
         <button className="button">{value1}</button>
-      </a>
-      <a href="">
+      </Link>
+      <Link to="/author">
         <button className="button">{value2}</button>
-      </a>
+      </Link>
     </div>
   );
 };
